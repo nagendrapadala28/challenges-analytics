@@ -27,7 +27,7 @@ After further feedback was gathered it turns out that some gyms only consider me
 2. One that only considers credit pack purchases with a column called `client_conversion_event_filter` with value `USER_CREDIT`
 3. One that considers both memberships and credit pack purchases with a column called `client_conversion_event_filter` with value `ALL`
 
-Once you have the dataset of users and their first conversion event details construct a new model which will enable this client conversion filtering. Results should appropriately adhere to the expected schema (See 1.4.2)
+Once you have the dataset of users and their first conversion event details construct a new model which will enable this client conversion filtering. Results should appropriately adhere to the expected schema, `fct_lead_conversions` (See 1.4.2)
 
 ## 1.3 Input Schema & Definitions
 
