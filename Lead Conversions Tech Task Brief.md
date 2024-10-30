@@ -41,9 +41,9 @@ After further feedback was gathered it turns out that some gyms only consider me
 
 To support this, update your query so that, for each user, up to 3 records are created:
 
-1. One that only considers membership purchases with a column called `client_conversion_event_filter` with value `MEMBERSHIP`
-2. One that only considers credit pack purchases with a column called `client_conversion_event_filter` with value `USER_CREDIT`
-3. One that considers both memberships and credit pack purchases with a column called `client_conversion_event_filter` with value `ALL`
+1. One that only considers the earliest membership purchase with a column called `client_conversion_event_filter` with value `MEMBERSHIP`
+2. One that only considers the earliest credit pack purchases with a column called `client_conversion_event_filter` with value `USER_CREDIT`
+3. One that considers both the earliest memberships and earliest credit pack purchases with a column called `client_conversion_event_filter` with value `ALL`
 
 The new model should adhere to the following rules:
 
