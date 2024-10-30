@@ -39,11 +39,17 @@ Using the provided input data create a query that will populate the `fct_client
 
 After further feedback was gathered it turns out that some gyms only consider membership purchases as qualifying events for conversion while others only consider credit pack purchases as a conversion while the majority of the gyms still consider both events valid. Users want a column, `client_conversion_event_filter`, that they can use to filter the report so that it will show them the conversion details in either of the three possible scenarios.
 
-To support this update your query so that for each user 3 records are created:
+To support this, update your query so that, for each user, up to 3 records are created:
 
 1. One that only considers membership purchases with a column called `client_conversion_event_filter` with value `MEMBERSHIP`
 2. One that only considers credit pack purchases with a column called `client_conversion_event_filter` with value `USER_CREDIT`
 3. One that considers both memberships and credit pack purchases with a column called `client_conversion_event_filter` with value `ALL`
+
+The new model should adhere to the following rules:
+
+- If the client purchased a membership AND a credit pack then create a `MEMBERSHIP` record, a `USER_CREDIT` record and an `ALL` record.
+- If the client purchased a membership but did NOT purchase a credit pack then create a `MEMBERSHIP` record and an `ALL` record.
+- If the client DID NOT purchased a membership but DID purchase a credit pack then create a `USER_CREDIT` record and an `ALL` record.
 
 Once you have the dataset of users and their first conversion event details construct a new model which will enable this client conversion filtering. Results should appropriately adhere to the expected schema, `fct_lead_conversions` (See 1.6.2)
 
