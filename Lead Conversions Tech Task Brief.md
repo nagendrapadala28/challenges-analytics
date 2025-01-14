@@ -187,7 +187,7 @@ Dataset capturing users and their client conversion event along with details ass
 | first_membership_name | VARCHAR | Membership name associated with the first event found for a given user.  |
 | first_membership_source | VARCHAR | Membership source associated with the first event found for a given user.  |
 | first_credit_pack_id | VARCHAR | Identifier of purchased credit pack associated with the first event found for a given user.  |
-| first_local_credit_pack_purchase_at | TIMESTAMP | Time when the credit pack was purchased at (Local Time) associated with the first event found for a given user.  |
+| first_local_credit_pack_purchased_at | TIMESTAMP | Time when the credit pack was purchased at (Local Time) associated with the first event found for a given user.  |
 | first_credit_pack_name | VARCHAR | Credit pack name associated with the first event found for a given user.  |
 | first_credit_pack_source | VARCHAR | Credit Pack source associated with the first event found for a given user.  |
 
@@ -228,6 +228,6 @@ Dataset containing data which can be used as input to Part 2 task in the situati
 | first_membership_name | VARCHAR | Membership name associated with the first event found for a given user.  |
 | first_membership_source | VARCHAR | Membership source associated with the first event found for a given user.  |
 | first_credit_pack_id | VARCHAR | Identifier of purchased credit pack associated with the first event found for a given user.  |
-| first_local_credit_pack_purchase_at | TIMESTAMP | Time when the credit pack was purchased at (Local Time) associated with the first event found for a given user.  |
+| first_local_credit_pack_purchased_at | TIMESTAMP | Time when the credit pack was purchased at (Local Time) associated with the first event found for a given user.  |
 | first_credit_pack_name | VARCHAR | Credit pack name associated with the first event found for a given user.  |
 | first_credit_pack_source | VARCHAR | Credit Pack source associated with the first event found for a given user.  |
