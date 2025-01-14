@@ -16,6 +16,9 @@ A new report has been requested by product to help stakeholders analyse Lead Con
 >
 
 ## 1.1 Prerequisites and Project Set-up
+
+You may approach this assignment using either SQL or Python. Below are the respective set-ups for both.
+### SQL Approach
 A containerised version of PostgreSQL 16 is provided pre-loaded with all required tables and data. To successfully run the container, docker should be installed along with an appropriate database client to interact with the database.
 
 To run and connect to the database run the following commands:
@@ -27,6 +30,17 @@ The running database can be connected to using the following credentials:
 - **URL**: jdbc:postgresql://localhost:5432/glofox
 - **USERNAME**: postgres
 - **PASSWORD**: docker
+  
+### Python Approach
+The `data` folder in this project contains all necessary source data required.
+
+Python 3.9 or higher should be installed.
+
+Any additional packages used in your solution should be included, by you, in a `requirements.txt` file.
+
+Workings should be added to the `main.py` file, and any additional files should be clearly documented and included in your submission.
+
+Please include CSV outputs for each of your answers
 
 
 ## 1.2 Part 1
@@ -58,6 +72,8 @@ Once you have the dataset of users and their first conversion event details cons
 
 ## 1.4 Requirements
 
+### SQL Approach
+
 Please complete the task using the PostgreSQL 16 container provided.
 
 All SQL written should be clearly documented throughout.
@@ -65,6 +81,15 @@ All SQL written should be clearly documented throughout.
 Submit solution in an `.sql` file separate to the `setup.sql` that can be run against the container without requiring an modification.
 
 Creation of intermediate tables is permitted if seen as necessary to complete the solution whether to improve readability or performance.
+
+Please make an effort to complete each step to the best of your ability.
+
+### Python Approach
+All Python written should be clearly documented throughout.
+
+Submit solution including any additional libraries or packages used in a `requirements.txt` or any similar dependency management tool.
+
+Please include CSV outputs for each part.
 
 Please make an effort to complete each step to the best of your ability.
 
